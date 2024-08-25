@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature-Inspired Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#forest">Forest</a></li>
+                <li><a href="#river">River</a></li>
+                <li><a href="#summit">Summit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="forest" class="journey forest" data-aos="fade-in">
+        <div class="content">
+            <h1>Entering the Forest</h1>
+            <p>Welcome to the forest, where your journey begins. Learn about our brand's origins here.</p>
+        </div>
+        <audio id="forest-sound" loop>
+            <source src="sounds/forest-sound.wav" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <section id="river" class="journey river" data-aos="fade-in">
+        <div class="content">
+            <h1>Crossing the River</h1>
+            <p>Discover the key features of our products as you cross the river.</p>
+        </div>
+        <audio id="river-sound" loop>
+            <source src="sounds/river-sound.wav" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <section id="summit" class="journey summit" data-aos="fade-in">
+        <div class="content">
+            <h1>Reaching the Summit</h1>
+            <p>You've reached the summit! Find out what makes our brand stand out and how you can get involved.</p>
+        </div>
+        <audio id="summit-sound" loop>
+            <source src="sounds/summit-sound.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <button onclick="toggleSound()" class="sound-toggle">Mute/Unmute</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
